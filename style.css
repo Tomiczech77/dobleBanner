@@ -1,0 +1,67 @@
+ /* in general */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ body {
+    height: 100vh;
+ }
+
+ /* Container */
+ .container-slider {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+ }
+
+/* Left side with colors and text */
+.slide-left {
+    position: absolute;
+    width: 35%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.color-1-slide {
+    background-color: #FD3555;
+}
+
+.color-2-slide {
+    background-color: #2a86ba;
+}
+
+.color-3-slide {
+    background-color: #252e33;
+}
+
+.color-4-slide {
+    background-color: #45a8bc;
+}
+
+/* Right side with imgages */
+.slide-right {
+    position: absolute;
+    width: 65%;
+    height: 100%;
+    top: 0;
+    left: 35%;
+}
+
+.image-1 {
+    background-image: url(img/obr1.jpg);
+}
+
+.image-2 {
+    background-image: url(img/obr2.jpg);
+}
+
+.image-3 {
+    background-image: url(img/obr3.jpg);
+}
+
+.image-4 {
+    background-image: url(img/obr4.jpg);
+}
