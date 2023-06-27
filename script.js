@@ -20,10 +20,20 @@ arrowDown.addEventListener("click", function(){
 function changeSlide(direction){
     const sliderHeight = containerSlider.clientHeight;
     
+    if(direction === "up"){
+        numberActiveSlide++;    // the same: numberActiveSlide = numberActiveSlide + 1;
+        if(numberActiveSlide > slidesLength - 1){
+            numberActiveSlide = 0;
+        }
+    } else {
+        numberActiveSlide--;
+        if(numberActiveSlide < 0){
+            numberActiveSlide = slidesLength - 1;
+        }
+    }
 
-
-
-    
+    slideRight.style.transform = `translateY(-${numberActiveSlide * sliderHeight}px)`;
+    slideLeft.style.transform = `translateY(${numberActiveSlide * sliderHeight}px)`;
 }
 
 
